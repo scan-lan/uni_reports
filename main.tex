@@ -1,0 +1,67 @@
+\documentclass[11pt, titlepage]{article}
+\usepackage{fontspec}
+ 
+\setmainfont{Arial}
+
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{graphicx}
+\usepackage[british]{babel}
+\usepackage{csquotes}
+\usepackage[
+backend=biber,
+style=apa
+]{biblatex}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\addbibresource{professionalPractice.bib}
+
+\graphicspath{ {./images/} }
+
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{L. Scanlan (40457342)}
+\rfoot{\thepage}
+
+\fancypagestyle{abstract}{
+    \lfoot{L. Scanlan (40457342)}
+    \rfoot{}
+}
+
+\linespread{0.5}
+    \title{{\huge SOC09404 Professional Practice 3}
+    \rule{\linewidth}{0.5mm}
+    {\large{Coursework 2 --- Report} \\ \normalsize{TODO words}}}
+    \author{Luke Scanlan \\ {\small 40457342}}
+    \date{May 2023}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{arabic}
+
+\include{abstract}
+
+\tableofcontents{}
+\clearpage
+
+\input{intro}
+
+\input{objective1}
+
+\input{objective2}
+
+\input{objective3}
+
+\input{objective4}
+
+\input{PP3}
+
+\input{conclusion}
+
+\clearpage
+\printbibliography
+\end{document}
