@@ -22,14 +22,18 @@ Cloud Engineering teams.
 There are two stream-aligned teams (Sales and Retention), two platform teams
 (Lottery Core and Cloud Engineering), and an enabling team. The stream-aligned
 teams are modelled after the company's two core objectives for the year;
-Retention: keep churn to 1.25\%, Sales: achieve xx\% household penetration.
+for Retention: maintain an average 1.25\% churn; and for Sales: achieve 16\%
+household penetration with 820,000 new tickets sold. Churn is the term for the
+percentage of players who cancel their subscription in a given time period, and
+household penetration is the percentage of UK households who are playing with
+PPL.
 
 \subsection{International alignment}
 
 There has been an increased focus on aligning the sister lotteries in 2023.
 Despite having a near-identical model, very little is shared between the UK,
 Germany, Sweden, The Netherlands, and Norway. Each have a copy of a bespoke
-lottery system that was built by external consultants. % WHEN WAS IT BUILT??
+lottery system called Beehive that was built by external consultants. % WHEN WAS IT BUILT??
 
 The lotteries also all have separate websites and front-end components which
 use the same theme that's passed down by Novamedia. This was identified as
@@ -42,7 +46,30 @@ The largest
 
 \subsection{Development practices}
 
+Agile methodologies:
+
+Most teams work using the Scrum methodology for project management; they work
+towards a goal set by their Product Owner (PO) in two-week increments,
+inspecting and adapting their approach as they gain new information. Working
+this way allows teams to be agile and responsive to change.
+
+Cloud computing:
+
+The department have adopted Cloud Computing through its extensive use of 
+Amazon Web Services (AWS). Due to the seasonal nature of the business
+(peak times are the holiday season) and the variability of traffic---which
+spikes during adverts---the infrastructure as a service (IaaS) model is a good
+fit. In particular, the department makes extensive use of "serverless"
+computing: a model where the business supplies the back-end logic and the
+service-provider manages resource allocation on their behalf; this means the
+business only pays for the resources they use.
+
+To manage application infrastructure, PPL use AWS Cloud Development Kit (CDK). CDK
+is an Infrastructure as Code (IaC) solution that allows developers to define
+their system architecture using the programming language of their choice (PPL
+use TypeScript). This solves the problem of inconsistent 
+
+DevOps:
+
 The department uses modern development practices, embracing agile methodologies
-(scrum and kanban), cloud computing and devops. Each team---with the exception
-of enablement---has a product owner who is responsible for deciding on their
-priorities. 
+(Scrum and Kanban), cloud computing and DevOps. Each team--- Most teams follow the
